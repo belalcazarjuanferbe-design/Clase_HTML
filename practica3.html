@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define la codificación de caracteres (UTF-8 soporta tildes, emojis, etc.) -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- TIP: Esto que escribiste es una abreviación de Emmet -->
+    <!-- h$*5 crea h1 hasta h5 automáticamente -->
+    <!-- h1*2 crea dos etiquetas h1 -->
+    
+    <!-- ❗ PROBLEMA: Estás repitiendo múltiples h1 -->
+    <!-- En HTML semántico solo debería haber UN h1 principal por página -->
+
+    <!-- ✔ CORRECTO: Jerarquía de títulos -->
+    <h1>Titulo principal o el primer orden</h1> <!-- Solo uno -->
+    <h2>Titulo de segundo orden</h2>
+    <h3>Titulo de tercer orden</h3>
+    <h4>Titulo de cuarto orden</h4>
+    <h5>Titulo de quinto orden</h5>
+    <h6>Titulo de sexto orden</h6>
+    
+    <!-- ❗ PROBLEMA: Aquí repites toda la estructura -->
+    <!-- Esto rompe la semántica si no es otra sección -->
+    
+    <!-- ✔ SOLUCIÓN: Usa <section> o <article> si necesitas otro bloque -->
+    <section>
+        <!-- Este h1 ya no debería ser h1, mejor un h2 -->
+        <h2>Otro bloque de contenido</h2>
+        <h3>Titulo de tercer orden</h3>
+        <h4>Titulo de cuarto orden</h4>
+        <h5>Titulo de quinto orden</h5>
+        <h6>Titulo de sexto orden</h6>
+    </section>
+
+    <!-- 💡 RECOMENDACIÓN:
+        Usa los encabezados como una estructura tipo índice:
+        h1 = tema principal
+        h2 = secciones
+        h3 = subsecciones
+    -->
+
+</body>
+</html>
